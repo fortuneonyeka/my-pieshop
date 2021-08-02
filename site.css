@@ -2,62 +2,64 @@
   margin: 0;
 }
 
-html,
-body {
+html,body {
   height: 100%;
+}
+
+h1{
+  font-size: 3em;
+  margin-top: 0.5em;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #999;
-}
-
-p {
-  margin: 0.5em 0 0.5em 0;
+  background-color: rgb(201, 193, 193);
 }
 
 header {
+  background-color: rgb(239, 214, 239);
   display: block;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #a493c0;
-  padding: 10px;
+  padding: 15px;
+  
 }
-
-nav a:visited,
+footer {
+  background-color: rgb(200, 209, 234);
+  display: block;
+  /* position: fixed; */
+  width: 100%;
+  padding: 15px;
+}
+nav a:hover, a:focus, a:active,
 nav a:link {
-  color: #fff;
   text-decoration: none;
+  color: palevioletred;
 }
 
 nav > ul {
-  display: inline;
-  padding: 0;
+ display: flex;
+  gap: 10px 20px;
+ list-style: none;
+ padding: 0;
+ list-style: none;
 }
 
-nav > ul > li {
+
+/* OR */
+
+/* nav > ul li {
   display: inline-block;
+  margin: 0 5px  0 5px;
+  padding: 0;
   list-style: none;
-  margin: 0 5px 0 5px;
-}
+} */
 
-main {
-  display: block;
-  background-image: url("images/background.png");
-  padding-top: 3em;
-  padding-bottom: 3em;
-  min-height: 85%;
-}
 
-footer {
-  padding: 15px;
-}
-
-aside,
-article {
-  padding: 2em;
+aside, article {
+  padding: 2em
 }
 
 aside {
@@ -65,34 +67,69 @@ aside {
 }
 
 article {
-  width: 75%;
+width: 75%;
+}
+
+img[src="images/banner2.jpeg"]{
+  max-width: 100%;
+}
+
+.sub-title {
+  background-color: white;
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+
+p {
+margin: .5em 0 .5em 0;
+}
+
+.logo {
+  border-radius: 50%; 
+  width: 200px;
+  padding: 35px;
+  padding-left: 0;
+}
+
+main {
+ display: block; 
+ background-image: url("images/background.png");
+ min-height: 85%;
+ padding-right: 3em;
+ padding-bottom: 3em;
 }
 
 .columns {
   display: flex;
+  
 }
 
-@media only screen and (min-width: 768px) {
-  main {
+@media  only screen and (min-width:768px) {
+  
+  main{
     display: flex;
   }
 
-  aside {
+  aside{
     margin-left: 2%;
   }
 
-  .columns-desktop {
+  .desktop {
     display: flex;
+    margin-top: 40px;
   }
 }
 
-/* Pie */
-.pie {
+/* pies  */
+
+.pie{
+ 
   width: 200px;
   padding: 10px;
   margin: 10px;
-  background-color: #fff;
-  border: solid 1px #ccc;
+  background-color: white;
+  border: 1px solid #ccc;
 }
 
 .pie img {
@@ -103,12 +140,12 @@ article {
   font-weight: bold;
 }
 
-.pie .price {
-  text-align: right;
-}
-
 .pie .columns {
   width: 100%;
+}
+
+.pie .price {
+  text-align: right;
 }
 
 .pie .columns div {
@@ -116,9 +153,10 @@ article {
 }
 
 .pie button {
-  background-color: #f6aeae;
+  background-color: palevioletred;
   padding: 10px;
-  border: solid 1px #f6aeae;
-  border-radius: 3px;
-  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10%;
+  color: white;
 }
+
