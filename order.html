@@ -27,14 +27,14 @@
         
         <h1>Order</h1>
 
-        <div class="pie">
+        <!-- <div class="pie">
           <img src="" />
           <div class="columns">
             <div class="title"></div>
             <div class="price"></div>
           </div>
           <p class="desc"></p>
-        </div>
+        </div> -->
 
         <form action="http://localhost:7071/api/post" method="POST">
           <input type="hidden" id="pie-order" name="pie-order">
@@ -122,17 +122,12 @@
           <div class="input-group">
             <div><label for="comments">Comments</label></div>
             <div>
-              <textarea
-                name="comments"
-                id="comments"
-                cols="30"
-                rows="10"
-              ></textarea>
+              <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comments here"></textarea>
             </div>
           </div>
 
           <input type="reset" value="Reset" />
-          <input type="submit" value="Order" />
+          <input type="submit" value="Order Now" />
         </form>
       </article>
     </main>
