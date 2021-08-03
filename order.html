@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,47 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Order | Bethany's Pie Shop</title>
     <link rel="stylesheet" href="site.css" type="text/css" />
-    <style>
-      @media only screen and (min-width: 768px) {
-        article {
-          width: 350px;
-        }
-      }
-
-      .pie {
-        margin-bottom: 20px;
-      }
-
-      .input-group {
-        margin-bottom: 20px;
-      }
-
-      .input-group input,
-      .input-group textarea,
-      .input-group select {
-        padding: 10px;
-        border: solid 1px #999;
-        border-radius: 2px;
-        width: 100%;
-      }
-
-      label {
-        font-weight: 600;
-      }
-
-      input[type="reset"] {
-        background: transparent;
-        border: 0;
-        text-decoration: underline;
-        cursor: pointer;
-      }
-
-      input[type="submit"] {
-        border: solid 1px #999;
-        border-radius: 3px;
-        padding: 10px;
-      }
-    </style>
+    <link rel="stylesheet" href="order.css" type="text/css" />
   </head>
 
   <body>
@@ -61,10 +21,10 @@
     </header>
 
     <main>
-      <aside><img src="images/logo.png" alt="Bethany's Pie Shop" /></aside>
+      <aside><img src="images/my-logo.png" alt="Bethany's Pie Shop" class="logo"/></aside> -->
 
-      <article>
-        <!-- ADD CONTENT HERE -->
+       <article>
+        
         <h1>Order</h1>
 
         <div class="pie">
@@ -82,24 +42,24 @@
 
           <div class="input-group">
             <div><label for="first-name">First name</label></div>
-            <div><input type="text" name="first-name" id="first-name" /></div>
+            <div><input type="text" name="first-name" id="first-name" placeholder="First Name" /></div>
           </div>
 
           <div class="input-group">
             <div><label for="last-name">Last name</label></div>
-            <div><input type="text" name="last-name" id="last-name" /></div>
+            <div><input type="text" name="last-name" id="last-name" placeholder="Last Name" /></div>
           </div>
 
           <div class="input-group">
             <div><label for="address">Address</label></div>
-            <div><input type="text" name="address" id="address" /></div>
+            <div><input type="text" name="address" id="address" placeholder="Address" /></div>
           </div>
 
           <div class="input-group">
             <div><label for="state">State</label></div>
             <div>
               <select name="state" id="state">
-                <option value="" selected>[ Select one ]</option>
+                <option value="" selected>[ Select your State ]</option>
                 <option value="Alabama">Alabama</option>
                 <option value="Alaska">Alaska</option>
                 <option value="Arizona">Arizona</option>
@@ -156,7 +116,7 @@
 
           <div class="input-group">
             <div><label for="postal-code">Postal code</label></div>
-            <div><input type="text" name="postal-code" id="postal-code" /></div>
+            <div><input type="text" name="postal-code" id="postal-code" placeholder="Postal Code" /></div>
           </div>
 
           <div class="input-group">
@@ -185,51 +145,6 @@
         </ul>
       </nav>
     </footer>
-    <script type="text/javascript">
-
-      window.addEventListener("DOMContentLoaded", function(e) {
-
-        let locationBox = document.querySelector("#location");
-        let location = {
-          latitude: "unknown",
-          longitude: "unknown"
-        };
-
-        window.navigator.geolocation.getCurrentPosition(
-          function(position) {
-
-            location = {
-              latitude: position.coords.latitude,
-              longitude: position.coords.longitude
-            };
-
-            locationBox.value = JSON.stringify(location);
-          },
-          function(error) {
-            locationBox.value = JSON.stringify(location);
-          });
-
-        const order = localStorage.getItem("order");
-        const pieOrder = JSON.parse(order);
-
-        if (order) {
-          const pie = document.querySelector(".pie");
-          const title = pie.querySelector(".title");
-          const price = pie.querySelector(".price");
-          const desc = pie.querySelector(".desc");
-          const orderInput = document.querySelector("#pie-order");
-
-          title.innerText = pieOrder.title;
-          price.innerText = pieOrder.price;
-          desc.innerText = pieOrder.desc;
-
-          orderInput.value = order;
-
-          const img = pie.querySelector("img");
-          img.setAttribute("src", `images/${pieOrder.id}.png`);
-          img.setAttribute("alt", pieOrder.title);
-        }
-      });
-    </script>
+    
   </body>
 </html>
