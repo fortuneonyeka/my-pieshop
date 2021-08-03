@@ -74,6 +74,8 @@
           price: container.querySelector(".price").innerText,
           descr: container.querySelector(".descr").innerText
         };
+        localStorage.setItem("order", JSON.stringify(order));
+
       });
 
     });
