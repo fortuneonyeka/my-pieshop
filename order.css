@@ -1,0 +1,43 @@
+@media only screen and (min-width: 768px) {
+  article {
+    width: 350px;
+  }
+}
+
+.pie {
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+  padding: 10px;
+  border: solid 1px #999;
+  border-radius: 2px;
+  width: 100%;
+}
+
+label {
+  font-weight: 600;
+}
+
+input[type="reset"] {
+  background: transparent;
+  color: red;
+  border: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  border: solid 1px #999;
+  border-radius: 3px;
+  padding: 10px;
+  background-color: rgb(239, 214, 239);
+}
