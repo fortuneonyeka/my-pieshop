@@ -22,3 +22,21 @@ git clone git@github.com:fortuneonyeka/my-pieshop.git
 - With the files open in Visual Studio Code, press the **Go Live** button at the bottom of the window to launch the files with [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
 
+## Author
+
+👤 **Fortunatus Onyeka**
+
+- GitHub [fortuneonyeka](https://github.com/fortuneonyeka)
+- Linkedin: [Fortunatus Ihedoro](https://www.linkedin.com/in/fortunatus-ihedoro/)
+
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
