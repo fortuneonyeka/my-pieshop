@@ -13,7 +13,7 @@ h1{
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(201, 193, 193);
+  /* background-color: rgb(201, 193, 193); */
 }
 
 header {
@@ -67,7 +67,7 @@ aside {
 }
 
 article {
-width: 75%;
+width: 50%;
 }
 
 img[src="images/banner2.jpeg"]{
@@ -94,7 +94,8 @@ margin: .5em 0 .5em 0;
 
 main {
  display: block; 
- background-image: url("images/background.png");
+
+ background-image: url("images/white-wood-background.jpeg");
  min-height: 85%;
  padding-right: 3em;
  padding-bottom: 3em;
@@ -133,6 +134,11 @@ main {
 }
 
 .pie img {
+  width: 100%;
+}
+
+img[src="images/apple-handspie.jpeg"]{
+  height: 80px;
   width: 100%;
 }
 
